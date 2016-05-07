@@ -11,6 +11,60 @@ import CoreData
 
 
 class TimerViewController: UIViewController {
+
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var counterView2: CounterView!
+    
+    let timerModel = TimerModel()
+    var timer = NSTimer()
+    
+    @IBAction func startButton(sender: AnyObject) {
+
+        if (!timerModel.timerIsRunning) {
+            timerModel.timerIsRunning = true
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
+            startButton.setTitle("Stop", forState: UIControlState.Normal)
+        }
+        else {
+            timer.invalidate()
+            startButton.setTitle("Resume", forState: UIControlState.Normal)
+        }
+    }
+    
+    @IBAction func minusButton(sender: AnyObject) {
+        timerReset()
+    }
+    
+    @IBAction func addButton(sender: AnyObject) {
+        timerReset()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    /*This function updares the counter and is ran by the timer */
+    func updateTime() {
+        timerModel.timerSeconds += 1
+        Format.display(time: timerModel.timerSeconds, label: timeLabel, prefix: "")
+    }
+    
+    func timerReset() {
+        timer.invalidate()
+        timerModel.timerReset()
+        startButton.setTitle("Start", forState: UIControlState.Normal)
+        timeLabel.text = "00:00"
+    }
+
    /*
     let userDefaults = NSUserDefaults.standardUserDefaults()
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0F95181CDE980A00057C56 /* TimerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F95171CDE980A00057C56 /* TimerButtons.swift */; };
 		8E7C621E1CBFA5DB0096DA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */; };
 		8E7C62201CBFA5DB0096DA53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C621F1CBFA5DB0096DA53 /* ViewController.swift */; };
 		8E7C62231CBFA5DB0096DA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7C62211CBFA5DB0096DA53 /* Main.storyboard */; };
@@ -16,8 +17,9 @@
 		8E7C62361CBFA5DB0096DA53 /* Study_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C62351CBFA5DB0096DA53 /* Study_LogTests.swift */; };
 		8E7C62411CBFA5DB0096DA53 /* Study_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C62401CBFA5DB0096DA53 /* Study_LogUITests.swift */; };
 		8E81F6661CDCDB6A00BA1EF3 /* Home-icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E81F6651CDCDB6A00BA1EF3 /* Home-icon.svg.png */; };
+		8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F6681CDCE55F00BA1EF3 /* Format.swift */; };
+		8E81F66D1CDCF3D600BA1EF3 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */; };
 		8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */; };
-		8EEA82DD1CC4EAC800D2AF91 /* AddButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA82DC1CC4EAC800D2AF91 /* AddButtons.swift */; };
 		8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */; };
 		8EFAD60B1CC2F40A008B2243 /* WeekGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */; };
 		8EFAD60D1CC2F45C008B2243 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD60C1CC2F45C008B2243 /* Colors.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E0F95171CDE980A00057C56 /* TimerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerButtons.swift; sourceTree = "<group>"; };
 		8E7C621A1CBFA5DB0096DA53 /* Study Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7C621F1CBFA5DB0096DA53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +60,9 @@
 		8E7C62401CBFA5DB0096DA53 /* Study_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_LogUITests.swift; sourceTree = "<group>"; };
 		8E7C62421CBFA5DB0096DA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E81F6651CDCDB6A00BA1EF3 /* Home-icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-icon.svg.png"; path = "../../../Home-icon.svg.png"; sourceTree = "<group>"; };
+		8E81F6681CDCE55F00BA1EF3 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
-		8EEA82DC1CC4EAC800D2AF91 /* AddButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtons.swift; sourceTree = "<group>"; };
 		8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenBackground.swift; sourceTree = "<group>"; };
 		8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekGraphView.swift; sourceTree = "<group>"; };
 		8EFAD60C1CC2F45C008B2243 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -90,13 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E57FF021CC388930098B327 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		8E7C62111CBFA5DB0096DA53 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +117,8 @@
 		8E7C621C1CBFA5DB0096DA53 /* Study Log */ = {
 			isa = PBXGroup;
 			children = (
+				8E81F6671CDCE1C000BA1EF3 /* Model */,
+				8EEA82DB1CC396E400D2AF91 /* Controller */,
 				8EFAD6101CC2FBCA008B2243 /* View */,
 				8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */,
 				8E7C62211CBFA5DB0096DA53 /* Main.storyboard */,
@@ -150,6 +149,15 @@
 			path = "Study LogUITests";
 			sourceTree = "<group>";
 		};
+		8E81F6671CDCE1C000BA1EF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E81F6681CDCE55F00BA1EF3 /* Format.swift */,
+				8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8EEA82DB1CC396E400D2AF91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +170,6 @@
 		8EFAD6101CC2FBCA008B2243 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8EEA82DB1CC396E400D2AF91 /* Controller */,
-				8E57FF021CC388930098B327 /* Views */,
 				8EFAD6111CC2FBE6008B2243 /* Graphics */,
 			);
 			name = View;
@@ -176,7 +182,7 @@
 				8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */,
 				8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */,
 				8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */,
-				8EEA82DC1CC4EAC800D2AF91 /* AddButtons.swift */,
+				8E0F95171CDE980A00057C56 /* TimerButtons.swift */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -313,14 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EEA82DD1CC4EAC800D2AF91 /* AddButtons.swift in Sources */,
+				8E81F66D1CDCF3D600BA1EF3 /* TimerModel.swift in Sources */,
 				8E7C62201CBFA5DB0096DA53 /* ViewController.swift in Sources */,
+				8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */,
 				8E7C621E1CBFA5DB0096DA53 /* AppDelegate.swift in Sources */,
 				8EFAD60F1CC2FB45008B2243 /* TimerViewController.swift in Sources */,
 				8EFAD60D1CC2F45C008B2243 /* Colors.swift in Sources */,
 				8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */,
 				8E7C62261CBFA5DB0096DA53 /* Study_Log.xcdatamodeld in Sources */,
 				8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */,
+				8E0F95181CDE980A00057C56 /* TimerButtons.swift in Sources */,
 				8EFAD60B1CC2F40A008B2243 /* WeekGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

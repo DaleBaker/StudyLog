@@ -18,41 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-Mo-982" customClass="RoundButton" customModule="Study_Log" customModuleProvider="target">
-                                <rect key="frame" x="51" y="177" width="218" height="50"/>
-                                <color key="backgroundColor" red="0.9601908457272631" green="1" blue="0.9837021126095935" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lR2-g6-4kY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Overview">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y91-O0-gDF">
-                                <rect key="frame" x="51" y="377" width="218" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5Q9-Jc-AzF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
-                                <state key="normal" title="Graphs">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasLine" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.16440979159999999" green="0.166873146" blue="0.17948298430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lc-ni-ZlM">
-                                <rect key="frame" x="51" y="277" width="218" height="50"/>
+                                <rect key="frame" x="51" y="262" width="218" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="x9B-0a-zV4"/>
@@ -72,24 +39,44 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eV-zp-xSq">
+                                <rect key="frame" x="51" y="162" width="218" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bJT-gu-6Mh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y91-O0-gDF">
+                                <rect key="frame" x="51" y="362" width="218" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Q9-Jc-AzF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
+                                <state key="normal" title="Graphs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1lc-ni-ZlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="3xE-Ak-SvD"/>
                             <constraint firstItem="1lc-ni-ZlM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="4I2-gx-uqE"/>
-                            <constraint firstItem="dXp-Mo-982" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="96t-qS-PQg"/>
+                            <constraint firstItem="1eV-zp-xSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="8wl-qV-fP0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1lc-ni-ZlM" secondAttribute="trailing" constant="27" id="9BA-tB-6gW"/>
                             <constraint firstItem="zbR-wz-vhH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EcD-5e-h33"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dXp-Mo-982" secondAttribute="trailing" constant="35" id="Jul-pH-uQ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1eV-zp-xSq" secondAttribute="trailing" constant="35" id="UjW-sa-IRD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="y91-O0-gDF" secondAttribute="trailing" constant="35" id="ZIQ-Cf-T9O"/>
                             <constraint firstItem="y91-O0-gDF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="ZN1-kB-uE8"/>
-                            <constraint firstItem="dXp-Mo-982" firstAttribute="top" secondItem="zbR-wz-vhH" secondAttribute="bottom" constant="90" id="d51-iS-hov"/>
+                            <constraint firstItem="1eV-zp-xSq" firstAttribute="top" secondItem="zbR-wz-vhH" secondAttribute="bottom" constant="75" id="faN-4F-DgC"/>
+                            <constraint firstItem="1lc-ni-ZlM" firstAttribute="top" secondItem="1eV-zp-xSq" secondAttribute="bottom" constant="50" id="kRL-Qb-lfE"/>
                             <constraint firstItem="zbR-wz-vhH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="m8z-ug-zbb"/>
                             <constraint firstItem="zbR-wz-vhH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="onn-4b-1PO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1lc-ni-ZlM" secondAttribute="trailing" constant="35" id="rnZ-w0-BPD"/>
-                            <constraint firstItem="dXp-Mo-982" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="s05-8Z-cqA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dXp-Mo-982" secondAttribute="trailing" constant="27" id="vOu-Do-cJN"/>
-                            <constraint firstItem="1lc-ni-ZlM" firstAttribute="top" secondItem="dXp-Mo-982" secondAttribute="bottom" constant="50" id="x5q-cH-EaS"/>
                             <constraint firstItem="y91-O0-gDF" firstAttribute="top" secondItem="1lc-ni-ZlM" secondAttribute="bottom" constant="50" id="zjO-tT-5Uh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -105,8 +92,6 @@
                         </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="s05-8Z-cqA"/>
-                                <exclude reference="vOu-Do-cJN"/>
                                 <exclude reference="4I2-gx-uqE"/>
                                 <exclude reference="9BA-tB-6gW"/>
                             </mask>
@@ -141,33 +126,51 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5r-JG-Why" customClass="CounterView" customModule="Study_Log" customModuleProvider="target">
                                 <rect key="frame" x="40" y="130" width="240" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-nE-FWW" userLabel="TimerValue">
+                                        <rect key="frame" x="21" y="84" width="198" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="198" id="Iw4-bc-QS8"/>
+                                            <constraint firstAttribute="height" constant="71" id="kNL-8N-Kze"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="50"/>
+                                        <color key="textColor" red="0.0" green="0.5" blue="0.87330280172413743" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="kNL-8N-Kze"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerY" secondItem="n5r-JG-Why" secondAttribute="centerY" id="0kp-sC-ROI"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerX" secondItem="n5r-JG-Why" secondAttribute="centerX" id="3IE-T9-8XL"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerX" secondItem="n5r-JG-Why" secondAttribute="centerX" id="9gK-x3-eTW"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="top" secondItem="n5r-JG-Why" secondAttribute="top" constant="84" id="ASn-50-uet"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerX" secondItem="n5r-JG-Why" secondAttribute="centerX" id="OOQ-jd-L84"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerY" secondItem="n5r-JG-Why" secondAttribute="centerY" id="St4-fd-lch"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerY" secondItem="n5r-JG-Why" secondAttribute="centerY" id="XQB-pe-5Il"/>
                                     <constraint firstAttribute="height" constant="240" id="abI-wZ-7Ss"/>
                                     <constraint firstAttribute="width" constant="240" id="et7-xd-CD5"/>
+                                    <constraint firstItem="U8W-nE-FWW" firstAttribute="centerX" secondItem="n5r-JG-Why" secondAttribute="centerX" id="yYi-AT-bFV"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="counter">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3IE-T9-8XL"/>
+                                        <exclude reference="9gK-x3-eTW"/>
+                                        <exclude reference="OOQ-jd-L84"/>
+                                        <exclude reference="St4-fd-lch"/>
+                                        <exclude reference="XQB-pe-5Il"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFf-lF-h52" customClass="AddButtons" customModule="Study_Log" customModuleProvider="target">
-                                <rect key="frame" x="250" y="448" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5uH-tb-FTp"/>
-                                    <constraint firstAttribute="width" constant="50" id="os7-2x-7be"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="50"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.32586206896551723" green="0.79000538793103292" blue="0.82920258620689657" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVK-B0-vyh">
                                 <rect key="frame" x="100" y="448" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.2039893720705635" green="0.41418787643746063" blue="0.79141443062827221" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,25 +182,11 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButton:" destination="Xiq-Jh-ASf" eventType="touchUpInside" id="M7N-oo-ukC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6We-kM-W9Z" customClass="AddButtons" customModule="Study_Log" customModuleProvider="target">
-                                <rect key="frame" x="20" y="448" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="9vX-nf-Fyb"/>
-                                    <constraint firstAttribute="height" constant="50" id="umE-dY-RVe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="50"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.88138469827586208" green="0.34049030172413536" blue="0.38475215517241379" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyG-kK-pC1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyG-kK-pC1" userLabel="Home">
                                 <rect key="frame" x="264" y="30" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Q4g-fS-r56"/>
@@ -208,24 +197,55 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="1JD-Um-4oh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wH-2I-exq" customClass="TimerButtons" customModule="Study_Log">
+                                <rect key="frame" x="250" y="448" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BT3-cW-Tgw"/>
+                                    <constraint firstAttribute="width" constant="50" id="vDb-qO-P4n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.32586206899999998" green="0.79000538789999997" blue="0.82920258619999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButton:" destination="Xiq-Jh-ASf" eventType="touchUpInside" id="awz-YZ-6wf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whl-hs-K01" customClass="TimerButtons" customModule="Study_Log">
+                                <rect key="frame" x="20" y="448" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="cHi-0a-udX"/>
+                                    <constraint firstAttribute="height" constant="50" id="p6W-Bc-LwT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.88138469829999999" green="0.3404903017" blue="0.3847521552" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="minusButton:" destination="Xiq-Jh-ASf" eventType="touchUpInside" id="c8f-VD-cKc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n5r-JG-Why" firstAttribute="top" secondItem="28r-Rg-iTr" secondAttribute="bottom" constant="50" id="1gv-ay-ND0"/>
                             <constraint firstItem="n5r-JG-Why" firstAttribute="centerX" secondItem="G1y-Z5-P5p" secondAttribute="centerX" id="1mx-PV-TWg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n5r-JG-Why" secondAttribute="trailing" constant="20" id="2tm-iG-oYI"/>
-                            <constraint firstItem="hVK-B0-vyh" firstAttribute="leading" secondItem="6We-kM-W9Z" secondAttribute="trailing" constant="30" id="7Re-io-mot"/>
                             <constraint firstItem="28r-Rg-iTr" firstAttribute="trailing" secondItem="G1y-Z5-P5p" secondAttribute="trailingMargin" id="7zr-Ve-wTx"/>
+                            <constraint firstItem="hVK-B0-vyh" firstAttribute="leading" secondItem="Whl-hs-K01" secondAttribute="trailing" constant="30" id="8H3-WS-RGB"/>
+                            <constraint firstItem="3qU-xU-4V1" firstAttribute="top" secondItem="9wH-2I-exq" secondAttribute="bottom" constant="70" id="9Ra-um-IbJ"/>
                             <constraint firstItem="28r-Rg-iTr" firstAttribute="top" secondItem="PQ5-54-fsb" secondAttribute="bottom" constant="10" id="JT7-6x-W2m"/>
                             <constraint firstItem="UyG-kK-pC1" firstAttribute="trailing" secondItem="G1y-Z5-P5p" secondAttribute="trailingMargin" id="KFT-N7-Icb"/>
-                            <constraint firstItem="RFf-lF-h52" firstAttribute="leading" secondItem="hVK-B0-vyh" secondAttribute="trailing" constant="30" id="VoS-0W-Pe0"/>
+                            <constraint firstItem="3qU-xU-4V1" firstAttribute="top" secondItem="Whl-hs-K01" secondAttribute="bottom" constant="70" id="Nnq-0b-jrq"/>
+                            <constraint firstItem="9wH-2I-exq" firstAttribute="leading" secondItem="hVK-B0-vyh" secondAttribute="trailing" constant="30" id="S3I-co-Kxm"/>
                             <constraint firstItem="3qU-xU-4V1" firstAttribute="top" secondItem="hVK-B0-vyh" secondAttribute="bottom" constant="70" id="Vy0-AO-88V"/>
                             <constraint firstItem="n5r-JG-Why" firstAttribute="leading" secondItem="G1y-Z5-P5p" secondAttribute="leadingMargin" constant="20" id="XTs-fj-ir4"/>
                             <constraint firstItem="28r-Rg-iTr" firstAttribute="leading" secondItem="G1y-Z5-P5p" secondAttribute="leadingMargin" id="fAK-IP-Ok7"/>
                             <constraint firstItem="UyG-kK-pC1" firstAttribute="top" secondItem="PQ5-54-fsb" secondAttribute="bottom" constant="10" id="lQB-l8-8F5"/>
                             <constraint firstItem="hVK-B0-vyh" firstAttribute="centerX" secondItem="G1y-Z5-P5p" secondAttribute="centerX" id="vkw-TA-LAe"/>
-                            <constraint firstItem="3qU-xU-4V1" firstAttribute="top" secondItem="RFf-lF-h52" secondAttribute="bottom" constant="70" id="wPq-qa-i92"/>
-                            <constraint firstItem="3qU-xU-4V1" firstAttribute="top" secondItem="6We-kM-W9Z" secondAttribute="bottom" constant="70" id="xw9-EH-OeU"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -235,6 +255,11 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="counterView2" destination="n5r-JG-Why" id="xWI-jY-I4p"/>
+                        <outlet property="startButton" destination="hVK-B0-vyh" id="Q37-0J-ONU"/>
+                        <outlet property="timeLabel" destination="U8W-nE-FWW" id="KWa-Jg-UUQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIQ-fF-Dn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

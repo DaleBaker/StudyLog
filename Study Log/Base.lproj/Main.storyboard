@@ -7,6 +7,109 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="1uv-rA-hgC">
+            <objects>
+                <viewController id="KYR-IV-Ske" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yoj-aM-VQP"/>
+                        <viewControllerLayoutGuide type="bottom" id="crk-aQ-1Zf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aoV-RR-Ndj" customClass="SplashScreenBackground" customModule="Study_Log" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBi-pm-ho8">
+                                <rect key="frame" x="16" y="30" width="288" height="43.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLV-Ye-BCl" userLabel="Home">
+                                <rect key="frame" x="264" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="3xd-3p-sfW"/>
+                                    <constraint firstAttribute="height" constant="40" id="9K0-hU-N9F"/>
+                                    <constraint firstAttribute="width" constant="40" id="VdO-qT-5Bn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="oiR-iy-uVG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Home-icon.svg.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3xd-3p-sfW"/>
+                                        <exclude reference="oiR-iy-uVG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="iXt-T7-oWu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Spent Studying:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwp-li-Nl1">
+                                <rect key="frame" x="16" y="94" width="288" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCV-Ur-Bs5">
+                                <rect key="frame" x="16" y="135" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Week:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezk-36-XBb">
+                                <rect key="frame" x="16" y="164" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Week:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHt-Fw-Xgm">
+                                <rect key="frame" x="16" y="193" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fse-f3-y0t">
+                                <rect key="frame" x="16" y="250" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qBi-pm-ho8" firstAttribute="trailing" secondItem="aoV-RR-Ndj" secondAttribute="trailingMargin" id="9Fq-63-PC4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LLV-Ye-BCl" secondAttribute="trailing" id="AYI-r4-aDa"/>
+                            <constraint firstItem="qBi-pm-ho8" firstAttribute="leading" secondItem="aoV-RR-Ndj" secondAttribute="leadingMargin" id="QLe-WY-0US"/>
+                            <constraint firstItem="LLV-Ye-BCl" firstAttribute="top" secondItem="yoj-aM-VQP" secondAttribute="bottom" constant="10" id="UlR-5w-aNC"/>
+                            <constraint firstItem="qBi-pm-ho8" firstAttribute="top" secondItem="yoj-aM-VQP" secondAttribute="bottom" constant="10" id="gjX-Ez-t7x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="patternSize">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lightColor">
+                                <color key="value" red="0.4947857830687179" green="0.46952927189776539" blue="0.79141443060000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="darkColor">
+                                <color key="value" red="0.55358649584014963" green="0.61867949251050169" blue="0.88138469829999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="brG-Jt-eYQ" appends="YES" id="jMu-9C-zTe"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQC-ud-3rT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="brG-Jt-eYQ">
+                    <connections>
+                        <segue destination="Xiq-Jh-ASf" kind="presentation" modalTransitionStyle="crossDissolve" id="IG7-rr-qIH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-166" y="1008"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Study_Log" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,9 +149,12 @@
                                     <constraint firstAttribute="height" constant="50" id="bJT-gu-6Mh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="25"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Overview">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KYR-IV-Ske" kind="presentation" modalTransitionStyle="crossDissolve" id="i2I-jU-bTO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y91-O0-gDF">
                                 <rect key="frame" x="51" y="362" width="218" height="50"/>
@@ -230,6 +336,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="n5r-JG-Why" firstAttribute="top" secondItem="28r-Rg-iTr" secondAttribute="bottom" constant="50" id="1gv-ay-ND0"/>
                             <constraint firstItem="n5r-JG-Why" firstAttribute="centerX" secondItem="G1y-Z5-P5p" secondAttribute="centerX" id="1mx-PV-TWg"/>
@@ -253,15 +360,23 @@
                                 <exclude reference="XTs-fj-ir4"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="n9Z-dl-cGG" appends="YES" id="5NK-ru-pOP"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="counterView2" destination="n5r-JG-Why" id="xWI-jY-I4p"/>
+                        <outlet property="counterView" destination="n5r-JG-Why" id="Hjd-24-1We"/>
                         <outlet property="startButton" destination="hVK-B0-vyh" id="Q37-0J-ONU"/>
                         <outlet property="timeLabel" destination="U8W-nE-FWW" id="KWa-Jg-UUQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIQ-fF-Dn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="n9Z-dl-cGG">
+                    <connections>
+                        <segue destination="KYR-IV-Ske" kind="presentation" modalTransitionStyle="crossDissolve" id="Uj3-82-e00"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="385" y="1008"/>
         </scene>
@@ -269,4 +384,9 @@
     <resources>
         <image name="Home-icon.svg.png" width="2000" height="2000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1JD-Um-4oh"/>
+        <segue reference="IG7-rr-qIH"/>
+        <segue reference="Uj3-82-e00"/>
+    </inferredMetricsTieBreakers>
 </document>

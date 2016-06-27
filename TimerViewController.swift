@@ -9,25 +9,22 @@
 import UIKit
 import CoreData
 
-
 class TimerViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var counterView2: CounterView!
-    
-    let timerModel = TimerModel()
-    var timer = NSTimer()
+    @IBOutlet weak var counterView: CounterView!
     
     @IBAction func startButton(sender: AnyObject) {
-
         if (!timerModel.timerIsRunning) {
             timerModel.timerIsRunning = true
+            timerModel.createNewTimeSlot()
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
             startButton.setTitle("Stop", forState: UIControlState.Normal)
         }
         else {
             timer.invalidate()
+            timerModel.pause()
             startButton.setTitle("Resume", forState: UIControlState.Normal)
         }
     }
@@ -45,6 +42,12 @@ class TimerViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        timerModel.retrieveTimeSlot()
+        updateCounter()
+        if (timerModel.currentTimeSlot != nil) {
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
+            startButton.setTitle("Stop", forState: UIControlState.Normal)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,15 +57,36 @@ class TimerViewController: UIViewController {
     
     /*This function updares the counter and is ran by the timer */
     func updateTime() {
-        timerModel.timerSeconds += 1
-        Format.display(time: timerModel.timerSeconds, label: timeLabel, prefix: "")
+        timerModel.updateTime()
+        updateCounter()
     }
     
     func timerReset() {
         timer.invalidate()
         timerModel.timerReset()
         startButton.setTitle("Start", forState: UIControlState.Normal)
-        timeLabel.text = "00:00"
+        updateCounter()
+    }
+    
+    func updateCounter() {
+        Format.display(time: timerModel.timerSeconds, label: timeLabel, prefix: "")
+        counterView.counter = timerModel.counterValue
+        if timerModel.counterIteration == 0 {
+            counterView.counterColor = Colors.orange1
+            counterView.outlineColor = Colors.red1
+        }
+        else if timerModel.counterIteration == 1 {
+            counterView.counterColor = Colors.turquoise2
+            counterView.outlineColor = Colors.green2
+        }
+        else if timerModel.counterIteration == 2 {
+            counterView.counterColor = Colors.blue3
+            counterView.outlineColor = Colors.purple3
+        }
+        else if timerModel.counterIteration == 3 {
+            counterView.counterColor = Colors.black4
+            counterView.outlineColor = Colors.white4
+        }
     }
 
    /*

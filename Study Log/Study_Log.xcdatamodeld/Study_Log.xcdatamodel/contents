@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="TimeData" representedClassName=".TimeData" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="timeSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimeSet" inverseName="timeSlots" inverseEntity="TimeSet" syncable="YES"/>
+    </entity>
+    <entity name="TimeSet" representedClassName=".TimeSet" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="timeSlots" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TimeData" inverseName="timeSet" inverseEntity="TimeData" syncable="YES"/>
+    </entity>
+    <entity name="TimeSlot" representedClassName="TimeSlot" syncable="YES">
+        <attribute name="startDate" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TimeSlot" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="TimeSet" positionX="252" positionY="-0" width="128" height="73"/>
+        <element name="TimeData" positionX="81" positionY="45" width="128" height="103"/>
+    </elements>
 </model>

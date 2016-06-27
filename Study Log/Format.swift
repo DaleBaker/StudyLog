@@ -37,7 +37,7 @@ class Format {
         let prefix2 = prefix
         
         if countTotal[2] == 0 && countTotal[1] == 0 && countTotal[0] == 0 {
-            totalTime.text = "\(prefix2)"
+            totalTime.text = "\(prefix2)00:00"
         }
         else if countTotal[2] > 0 {  //if hours is more than one
             if countTotal[1] > 9 { //if minutes is double digits

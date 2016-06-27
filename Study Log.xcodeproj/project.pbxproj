@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8E0F95181CDE980A00057C56 /* TimerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F95171CDE980A00057C56 /* TimerButtons.swift */; };
+		8E4002001D1A690100C9DFB7 /* Home-icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4001FF1D1A690100C9DFB7 /* Home-icon.svg.png */; };
+		8E40021D1D1E37A100C9DFB7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40021C1D1E37A100C9DFB7 /* Globals.swift */; };
+		8E4002281D1F573900C9DFB7 /* TimeSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002221D1F573900C9DFB7 /* TimeSet+CoreDataProperties.swift */; };
+		8E4002291D1F573900C9DFB7 /* TimeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002231D1F573900C9DFB7 /* TimeSet.swift */; };
+		8E40022A1D1F573900C9DFB7 /* TimeData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002241D1F573900C9DFB7 /* TimeData+CoreDataProperties.swift */; };
+		8E40022B1D1F573900C9DFB7 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002251D1F573900C9DFB7 /* TimeData.swift */; };
+		8E40022C1D1F573900C9DFB7 /* TimeSlot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002261D1F573900C9DFB7 /* TimeSlot+CoreDataProperties.swift */; };
+		8E40022D1D1F573900C9DFB7 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4002271D1F573900C9DFB7 /* TimeSlot.swift */; };
+		8E40022F1D20083D00C9DFB7 /* TimeSlotCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40022E1D20083D00C9DFB7 /* TimeSlotCoreData.swift */; };
 		8E7C621E1CBFA5DB0096DA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */; };
 		8E7C62201CBFA5DB0096DA53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C621F1CBFA5DB0096DA53 /* ViewController.swift */; };
 		8E7C62231CBFA5DB0096DA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7C62211CBFA5DB0096DA53 /* Main.storyboard */; };
@@ -16,9 +25,8 @@
 		8E7C622B1CBFA5DB0096DA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7C62291CBFA5DB0096DA53 /* LaunchScreen.storyboard */; };
 		8E7C62361CBFA5DB0096DA53 /* Study_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C62351CBFA5DB0096DA53 /* Study_LogTests.swift */; };
 		8E7C62411CBFA5DB0096DA53 /* Study_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C62401CBFA5DB0096DA53 /* Study_LogUITests.swift */; };
-		8E81F6661CDCDB6A00BA1EF3 /* Home-icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E81F6651CDCDB6A00BA1EF3 /* Home-icon.svg.png */; };
 		8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F6681CDCE55F00BA1EF3 /* Format.swift */; };
-		8E81F66D1CDCF3D600BA1EF3 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */; };
+		8E81F66D1CDCF3D600BA1EF3 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F66C1CDCF3D600BA1EF3 /* TimerViewModel.swift */; };
 		8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */; };
 		8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */; };
 		8EFAD60B1CC2F40A008B2243 /* WeekGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */; };
@@ -45,6 +53,16 @@
 
 /* Begin PBXFileReference section */
 		8E0F95171CDE980A00057C56 /* TimerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerButtons.swift; sourceTree = "<group>"; };
+		8E4001FF1D1A690100C9DFB7 /* Home-icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-icon.svg.png"; sourceTree = SOURCE_ROOT; };
+		8E4002011D1AB91C00C9DFB7 /* Study Log-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Study Log-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E40021C1D1E37A100C9DFB7 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		8E4002221D1F573900C9DFB7 /* TimeSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8E4002231D1F573900C9DFB7 /* TimeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSet.swift; sourceTree = "<group>"; };
+		8E4002241D1F573900C9DFB7 /* TimeData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8E4002251D1F573900C9DFB7 /* TimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
+		8E4002261D1F573900C9DFB7 /* TimeSlot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeSlot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8E4002271D1F573900C9DFB7 /* TimeSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
+		8E40022E1D20083D00C9DFB7 /* TimeSlotCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlotCoreData.swift; sourceTree = "<group>"; };
 		8E7C621A1CBFA5DB0096DA53 /* Study Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7C621F1CBFA5DB0096DA53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,9 +77,8 @@
 		8E7C623C1CBFA5DB0096DA53 /* Study LogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Study LogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7C62401CBFA5DB0096DA53 /* Study_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_LogUITests.swift; sourceTree = "<group>"; };
 		8E7C62421CBFA5DB0096DA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E81F6651CDCDB6A00BA1EF3 /* Home-icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-icon.svg.png"; path = "../../../Home-icon.svg.png"; sourceTree = "<group>"; };
 		8E81F6681CDCE55F00BA1EF3 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
-		8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		8E81F66C1CDCF3D600BA1EF3 /* TimerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 		8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenBackground.swift; sourceTree = "<group>"; };
 		8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekGraphView.swift; sourceTree = "<group>"; };
@@ -94,13 +111,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E4002301D20094800C9DFB7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8E40022E1D20083D00C9DFB7 /* TimeSlotCoreData.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		8E4002311D200BB200C9DFB7 /* NSManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				8E4002221D1F573900C9DFB7 /* TimeSet+CoreDataProperties.swift */,
+				8E4002231D1F573900C9DFB7 /* TimeSet.swift */,
+				8E4002241D1F573900C9DFB7 /* TimeData+CoreDataProperties.swift */,
+				8E4002251D1F573900C9DFB7 /* TimeData.swift */,
+				8E4002261D1F573900C9DFB7 /* TimeSlot+CoreDataProperties.swift */,
+				8E4002271D1F573900C9DFB7 /* TimeSlot.swift */,
+			);
+			name = NSManagedObjects;
+			sourceTree = "<group>";
+		};
 		8E7C62111CBFA5DB0096DA53 = {
 			isa = PBXGroup;
 			children = (
+				8E4002311D200BB200C9DFB7 /* NSManagedObjects */,
 				8E7C621C1CBFA5DB0096DA53 /* Study Log */,
 				8E7C62341CBFA5DB0096DA53 /* Study LogTests */,
 				8E7C623F1CBFA5DB0096DA53 /* Study LogUITests */,
 				8E7C621B1CBFA5DB0096DA53 /* Products */,
+				8E4002011D1AB91C00C9DFB7 /* Study Log-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,8 +162,8 @@
 				8EFAD6101CC2FBCA008B2243 /* View */,
 				8E7C621D1CBFA5DB0096DA53 /* AppDelegate.swift */,
 				8E7C62211CBFA5DB0096DA53 /* Main.storyboard */,
+				8E4001FF1D1A690100C9DFB7 /* Home-icon.svg.png */,
 				8E7C62271CBFA5DB0096DA53 /* Assets.xcassets */,
-				8E81F6651CDCDB6A00BA1EF3 /* Home-icon.svg.png */,
 				8E7C62291CBFA5DB0096DA53 /* LaunchScreen.storyboard */,
 				8E7C622C1CBFA5DB0096DA53 /* Info.plist */,
 				8E7C62241CBFA5DB0096DA53 /* Study_Log.xcdatamodeld */,
@@ -152,8 +192,10 @@
 		8E81F6671CDCE1C000BA1EF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E4002301D20094800C9DFB7 /* CoreData */,
 				8E81F6681CDCE55F00BA1EF3 /* Format.swift */,
-				8E81F66C1CDCF3D600BA1EF3 /* TimerModel.swift */,
+				8E81F66C1CDCF3D600BA1EF3 /* TimerViewModel.swift */,
+				8E40021C1D1E37A100C9DFB7 /* Globals.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -292,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7C622B1CBFA5DB0096DA53 /* LaunchScreen.storyboard in Resources */,
-				8E81F6661CDCDB6A00BA1EF3 /* Home-icon.svg.png in Resources */,
+				8E4002001D1A690100C9DFB7 /* Home-icon.svg.png in Resources */,
 				8E7C62281CBFA5DB0096DA53 /* Assets.xcassets in Resources */,
 				8E7C62231CBFA5DB0096DA53 /* Main.storyboard in Resources */,
 			);
@@ -319,17 +361,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E81F66D1CDCF3D600BA1EF3 /* TimerModel.swift in Sources */,
+				8E81F66D1CDCF3D600BA1EF3 /* TimerViewModel.swift in Sources */,
 				8E7C62201CBFA5DB0096DA53 /* ViewController.swift in Sources */,
+				8E40022B1D1F573900C9DFB7 /* TimeData.swift in Sources */,
+				8E40022F1D20083D00C9DFB7 /* TimeSlotCoreData.swift in Sources */,
 				8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */,
 				8E7C621E1CBFA5DB0096DA53 /* AppDelegate.swift in Sources */,
 				8EFAD60F1CC2FB45008B2243 /* TimerViewController.swift in Sources */,
+				8E40022A1D1F573900C9DFB7 /* TimeData+CoreDataProperties.swift in Sources */,
+				8E40022C1D1F573900C9DFB7 /* TimeSlot+CoreDataProperties.swift in Sources */,
 				8EFAD60D1CC2F45C008B2243 /* Colors.swift in Sources */,
 				8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */,
+				8E40022D1D1F573900C9DFB7 /* TimeSlot.swift in Sources */,
 				8E7C62261CBFA5DB0096DA53 /* Study_Log.xcdatamodeld in Sources */,
 				8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */,
+				8E4002291D1F573900C9DFB7 /* TimeSet.swift in Sources */,
+				8E40021D1D1E37A100C9DFB7 /* Globals.swift in Sources */,
 				8E0F95181CDE980A00057C56 /* TimerButtons.swift in Sources */,
 				8EFAD60B1CC2F40A008B2243 /* WeekGraphView.swift in Sources */,
+				8E4002281D1F573900C9DFB7 /* TimeSet+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,10 +523,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Study Log/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ned.NedCorp.Study-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Study Log-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -484,10 +537,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Study Log/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ned.NedCorp.Study-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Study Log-Bridging-Header.h";
 			};
 			name = Release;
 		};

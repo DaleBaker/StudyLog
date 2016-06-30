@@ -27,6 +27,9 @@
 		8E7C62411CBFA5DB0096DA53 /* Study_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7C62401CBFA5DB0096DA53 /* Study_LogUITests.swift */; };
 		8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F6681CDCE55F00BA1EF3 /* Format.swift */; };
 		8E81F66D1CDCF3D600BA1EF3 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81F66C1CDCF3D600BA1EF3 /* TimerViewModel.swift */; };
+		8EA9B94F1D2220DE00187047 /* TimeSetCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9B94E1D2220DE00187047 /* TimeSetCoreData.swift */; };
+		8EA9B9541D224C2C00187047 /* TimeDataCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9B9531D224C2C00187047 /* TimeDataCoreData.swift */; };
+		8EDB9BD11D243424008A3198 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB9BD01D243424008A3198 /* OverviewViewController.swift */; };
 		8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */; };
 		8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */; };
 		8EFAD60B1CC2F40A008B2243 /* WeekGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */; };
@@ -79,6 +82,9 @@
 		8E7C62421CBFA5DB0096DA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E81F6681CDCE55F00BA1EF3 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		8E81F66C1CDCF3D600BA1EF3 /* TimerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		8EA9B94E1D2220DE00187047 /* TimeSetCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSetCoreData.swift; sourceTree = "<group>"; };
+		8EA9B9531D224C2C00187047 /* TimeDataCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeDataCoreData.swift; sourceTree = "<group>"; };
+		8EDB9BD01D243424008A3198 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		8EEA82D91CC3933400D2AF91 /* TimerCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 		8EFAD6061CC2E9C3008B2243 /* SplashScreenBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenBackground.swift; sourceTree = "<group>"; };
 		8EFAD60A1CC2F40A008B2243 /* WeekGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekGraphView.swift; sourceTree = "<group>"; };
@@ -115,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				8E40022E1D20083D00C9DFB7 /* TimeSlotCoreData.swift */,
+				8EA9B94E1D2220DE00187047 /* TimeSetCoreData.swift */,
+				8EA9B9531D224C2C00187047 /* TimeDataCoreData.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -200,11 +208,20 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		8EEA82DB1CC396E400D2AF91 /* Controller */ = {
+		8EA9B9521D224B7800187047 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				8E7C621F1CBFA5DB0096DA53 /* ViewController.swift */,
 				8EFAD60E1CC2FB45008B2243 /* TimerViewController.swift */,
+				8EDB9BD01D243424008A3198 /* OverviewViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8EEA82DB1CC396E400D2AF91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EA9B9521D224B7800187047 /* ViewControllers */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -362,7 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E81F66D1CDCF3D600BA1EF3 /* TimerViewModel.swift in Sources */,
+				8EDB9BD11D243424008A3198 /* OverviewViewController.swift in Sources */,
 				8E7C62201CBFA5DB0096DA53 /* ViewController.swift in Sources */,
+				8EA9B94F1D2220DE00187047 /* TimeSetCoreData.swift in Sources */,
 				8E40022B1D1F573900C9DFB7 /* TimeData.swift in Sources */,
 				8E40022F1D20083D00C9DFB7 /* TimeSlotCoreData.swift in Sources */,
 				8E81F6691CDCE55F00BA1EF3 /* Format.swift in Sources */,
@@ -374,6 +393,7 @@
 				8EFAD6071CC2E9C3008B2243 /* SplashScreenBackground.swift in Sources */,
 				8E40022D1D1F573900C9DFB7 /* TimeSlot.swift in Sources */,
 				8E7C62261CBFA5DB0096DA53 /* Study_Log.xcdatamodeld in Sources */,
+				8EA9B9541D224C2C00187047 /* TimeDataCoreData.swift in Sources */,
 				8EEA82DA1CC3933400D2AF91 /* TimerCounter.swift in Sources */,
 				8E4002291D1F573900C9DFB7 /* TimeSet.swift in Sources */,
 				8E40021D1D1E37A100C9DFB7 /* Globals.swift in Sources */,

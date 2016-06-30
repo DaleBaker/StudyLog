@@ -9,40 +9,31 @@
 import UIKit
 import CoreData
 
-class TimerViewController: UIViewController {
+public class TimerViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var counterView: CounterView!
     
     @IBAction func startButton(sender: AnyObject) {
-        if (!timerModel.timerIsRunning) {
-            timerModel.timerIsRunning = true
-            timerModel.createNewTimeSlot()
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
-            startButton.setTitle("Stop", forState: UIControlState.Normal)
-        }
-        else {
-            timer.invalidate()
-            timerModel.pause()
-            startButton.setTitle("Resume", forState: UIControlState.Normal)
-        }
+        startButtonClicked()
     }
     
     @IBAction func minusButton(sender: AnyObject) {
-        timerReset()
+        minusButtonClicked()
     }
     
     @IBAction func addButton(sender: AnyObject) {
-        timerReset()
+        addButtonClicked()
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        timerModel.retrieveTimeSlot()
+    public override func viewDidAppear(animated: Bool) {
+        //timerModel.retrieveTimeSlot()
+        timer.invalidate()
         updateCounter()
         if (timerModel.currentTimeSlot != nil) {
             timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
@@ -50,7 +41,7 @@ class TimerViewController: UIViewController {
         }
     }
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -64,8 +55,10 @@ class TimerViewController: UIViewController {
     func timerReset() {
         timer.invalidate()
         timerModel.timerReset()
-        startButton.setTitle("Start", forState: UIControlState.Normal)
-        updateCounter()
+        if startButton != nil {
+            startButton.setTitle("Start", forState: UIControlState.Normal)
+            updateCounter()
+        }
     }
     
     func updateCounter() {
@@ -87,6 +80,35 @@ class TimerViewController: UIViewController {
             counterView.counterColor = Colors.black4
             counterView.outlineColor = Colors.white4
         }
+    }
+    
+    func startButtonClicked() {
+        if (!timerModel.timerIsRunning) {
+            timerModel.timerIsRunning = true
+            timerModel.createNewTimeSlot()
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TimerViewController.updateTime), userInfo: nil, repeats: true)
+            if startButton != nil {
+                startButton.setTitle("Stop", forState: UIControlState.Normal)
+            }
+        }
+        else {
+            timer.invalidate()
+            timerModel.pause()
+            timerModel.addTimeSlotToTempSet()
+            if startButton != nil {
+                startButton.setTitle("Resume", forState: UIControlState.Normal)
+            }
+        }
+    }
+    
+    func addButtonClicked() {
+        timerModel.addToMainTimeSet()
+        timerReset()
+    }
+    
+    func minusButtonClicked() {
+        timerReset()
+        TimeDataCoreData.deleteTimeDataInTempTimeSet()
     }
 
    /*

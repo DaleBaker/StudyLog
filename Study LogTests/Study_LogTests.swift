@@ -19,18 +19,64 @@ class Study_LogTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        resetAll()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testStartThenAdd() {
+        let ts = TimerViewController()
+        ts.startButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, true)
+        XCTAssertNotNil(timerModel.currentTimeSlot)
+        ts.addButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, false)
+        XCTAssertNil(timerModel.currentTimeSlot)
+        XCTAssertEqual(mainTimeSet?.timeSlots?.count, 1)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testStartThenMinus() {
+        let ts = TimerViewController()
+        ts.startButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, true)
+        XCTAssertNotNil(timerModel.currentTimeSlot)
+        ts.minusButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, false)
+        XCTAssertNil(timerModel.currentTimeSlot)
+    }
+    
+    func testStartThenPause() {
+        let ts = TimerViewController()
+        ts.startButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, true)
+        XCTAssertNotNil(timerModel.currentTimeSlot)
+        ts.startButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, false)
+        XCTAssertNil(timerModel.currentTimeSlot)
+        XCTAssertNotNil(tempTimeSet)
+        XCTAssertEqual(tempTimeSet?.timeSlots?.count, 1)
+    }
+    
+    func testStartThenPauseThenAdd() {
+        let ts = TimerViewController()
+        ts.startButtonClicked()
+        ts.startButtonClicked()
+        ts.addButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, false)
+        XCTAssertNil(timerModel.currentTimeSlot)
+        XCTAssertNotNil(tempTimeSet)
+        XCTAssertEqual(tempTimeSet?.timeSlots?.count, 0)
+        XCTAssertEqual(mainTimeSet?.timeSlots?.count, 1)
+    }
+    
+    func testStartThenPauseThenMinus() {
+        let ts = TimerViewController()
+        ts.startButtonClicked()
+        ts.startButtonClicked()
+        ts.minusButtonClicked()
+        XCTAssertEqual(timerModel.timerIsRunning, false)
+        XCTAssertNil(timerModel.currentTimeSlot)
+        XCTAssertNotNil(tempTimeSet)
+        XCTAssertEqual(tempTimeSet?.timeSlots?.count, 0)
+        XCTAssertEqual(mainTimeSet?.timeSlots?.count, 0)
     }
     
 }

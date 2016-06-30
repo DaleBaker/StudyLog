@@ -37,6 +37,14 @@
                BlueprintName = "Study LogTests"
                ReferencedContainer = "container:Study Log.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TimerViewController">
+               </Test>
+               <Test
+                  Identifier = "TimerViewController/testExample()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">

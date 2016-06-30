@@ -17,8 +17,12 @@ let fetchRequest = NSFetchRequest()
 let timerModel = TimerViewModel()
 var timer = NSTimer()
 
-/*
- 
- // Insert code here to add functionality to your managed object subclass
+var tempTimeSet : TimeSet?
+var mainTimeSet : TimeSet?
 
-*/
+func resetAll() {
+    timerModel.timerReset()
+    TimeDataCoreData.deleteAllTimeData()
+    TimeSetCoreData.deleteAllTimeSets()
+    TimeSlotCoreData.deleteAllTimeSlots()
+}

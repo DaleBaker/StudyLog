@@ -8,6 +8,7 @@
 
 import XCTest
 
+
 class Study_LogUITests: XCTestCase {
         
     override func setUp() {
@@ -31,6 +32,12 @@ class Study_LogUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Timer"].tap()
+        app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Button).elementBoundByIndex(1).tap()
+        //XCTAssertFalse(timerModel.timerIsRunning)
+        
     }
     
 }

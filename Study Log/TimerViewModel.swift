@@ -13,8 +13,7 @@ import CoreData
 class TimerViewModel {
     
     static let timerViewModel = TimerViewModel()
-    static let tempTimeSet = TimeSet()
-    
+
     var timerSeconds : Int
     var timerIsRunning : Bool
     var counterValue : Int
@@ -57,13 +56,45 @@ class TimerViewModel {
         }
     }
     
+    func addTimeSlotToTempSet() {
+        let timeData = NSEntityDescription.insertNewObjectForEntityForName("TimeData", inManagedObjectContext: managedContext) as? TimeData
+        
+        timeData?.startDate = self.currentTimeSlot?.startDate
+        timeData?.duration = self.currentTimeSlot!.timeSinceBeginDate()
+        timeData?.timeSet = tempTimeSet
+        
+        do {
+            try managedContext.save()
+            currentTimeSlot = nil
+            TimeSlotCoreData.deleteAllTimeSlots()
+        }
+        catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    func addToMainTimeSet() {
+        if self.currentTimeSlot != nil {
+            addTimeSlotToTempSet()
+        }
+        for item in (tempTimeSet?.timeSlots)! {
+            let timeData = item as! TimeData
+            timeData.timeSet = mainTimeSet
+        }
+        do {
+            try managedContext.save()
+            currentTimeSlot = nil
+            TimeSlotCoreData.deleteAllTimeSlots()
+        }
+        catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
     func retrieveTimeSlot() {
         currentTimeSlot = TimeSlotCoreData.returnCurrentTimeSlot()
         if (currentTimeSlot != nil) {
             self.timerIsRunning = true
         }
-
     }
-    
-    
 }
